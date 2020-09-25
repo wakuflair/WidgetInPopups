@@ -1,0 +1,12 @@
+﻿@page
+@model DashboardDemo.Web.Pages.MyModal.MyModal
+
+@{
+    Layout = null;
+}
+<abp-modal>
+    <abp-modal-header title="MyModal"></abp-modal-header>
+    <abp-modal-body>
+         @await Component.InvokeAsync("NewUserStatisticWidget")
+    </abp-modal-body>
+</abp-modal>
